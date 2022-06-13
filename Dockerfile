@@ -23,3 +23,5 @@ RUN ./gradlew clean
 RUN ./gradlew jar
 #run zookeeper
 CMD /kafka/kafka-3.2.0-src/bin/zookeeper-server-start.sh /kafka/kafka-3.2.0-src/config/zookeeper.properties
+VOLUME ["/kafka"]
+EXPOSE 2181
